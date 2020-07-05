@@ -5,5 +5,6 @@ export const pattern = (line) => {
     if (/^### (.+)/.test(line)) return <h3>{line.match(/^### (.+)/)?.[1]}</h3>
     if (/^#### (.+)/.test(line)) return <h4>{line.match(/^#### (.+)/)?.[1]}</h4>
     if (/^##### (.+)/.test(line)) return <h5>{line.match(/^##### (.+)/)?.[1]}</h5>
+    if (/^###### (.+)/.test(line)) return <h6>{line.match(/^###### (.+)/)?.[1]}</h6>
     else return <p>{line}</p>
 }
